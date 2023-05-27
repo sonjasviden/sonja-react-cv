@@ -1,5 +1,4 @@
 {
-  "homepage": "https://sonjasviden.github.io/sonja-react-cv",
   "name": "sonja-react-cv",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +12,6 @@
     "@types/node": "^16.18.34",
     "@types/react": "^18.2.7",
     "@types/react-dom": "^18.2.4",
-    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
@@ -46,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
