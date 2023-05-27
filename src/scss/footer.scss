@@ -1,0 +1,24 @@
+footer {
+    position: fixed;
+    top: 80%;
+
+    .footer-icons {
+        padding: 3rem;
+        cursor: pointer;
+
+        svg {
+            cursor: pointer;
+            height: 15px;
+            transition: all 1s ease 0s;
+            fill: var(--font-color);
+
+            &:hover {
+                fill: var(--hover-link);
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

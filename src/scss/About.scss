@@ -1,0 +1,53 @@
+section.about {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+
+    .container {
+        display: flex;
+        overflow-y: scroll;
+        height: 60vh;
+
+        .text {
+            padding-right: 20px;
+
+            h3 {
+                font-size: 1.4rem;
+                font-family: "sackers gothic medium", sans-serif;
+
+            }
+
+            p {
+                font-size: 16px;
+                padding: 20px 0px 20px 0px;
+                font-family: 'Quicksand', sans-serif;
+            }
+        }
+    }
+
+    .icon-container {
+        width: 100%;
+        text-align: center;
+
+        h3 {
+            font-size: 1.4rem;
+            font-family: "sackers gothic medium", sans-serif;
+            padding-bottom: 15px;
+            text-transform: lowercase;
+
+        }
+
+        svg {
+            height: 25px;
+            width: 25px;
+            padding: 4px;
+        }
+
+        .ispeak-icons,
+        .design-icons,
+        .framework-icons {
+            padding: 10px;
+        }
+    }
+
+}

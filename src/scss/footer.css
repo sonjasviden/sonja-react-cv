@@ -1,0 +1,20 @@
+footer {
+  position: fixed;
+  top: 80%;
+}
+footer .footer-icons {
+  padding: 3rem;
+  cursor: pointer;
+}
+footer .footer-icons svg {
+  cursor: pointer;
+  height: 15px;
+  transition: all 1s ease 0s;
+  fill: var(--font-color);
+}
+footer .footer-icons svg:hover {
+  fill: var(--hover-link);
+}
+footer a {
+  text-decoration: none;
+}/*# sourceMappingURL=footer.css.map */

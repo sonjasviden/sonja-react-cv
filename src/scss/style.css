@@ -1,0 +1,613 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond|Work+Sans:700");
+@import url("https://fonts.cdnfonts.com/css/sackers-gothic-medium");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+/* 1 */
+:root {
+  --font-color: #545454;
+  --background-color: #ebd1c4;
+  --hover-link: #aba6a6;
+  --cv-background: white;
+  --contact-background: beige;
+}
+
+/* 2 */
+[data-theme=dark] {
+  --font-color: beige;
+  --background-color: #353430;
+  --hover-link: rgb(119, 119, 106);
+  --cv-background: beige;
+  --contact-background: #646060;
+}
+
+/* 3 */
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+a {
+  color: var(--font-color);
+}
+
+/* Custom Dark Mode Toggle Element */
+.toggle-theme-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.toggle-theme-wrapper span {
+  font-size: 28px;
+}
+
+.toggle-theme {
+  position: relative;
+  display: inline-block;
+  height: 25px;
+  width: 50px;
+}
+
+.toggle-theme input {
+  display: none;
+}
+
+.slider {
+  background-color: #545454;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.2s;
+}
+
+.slider:before {
+  background-color: var(--background-color);
+  bottom: 4px;
+  content: "";
+  height: 17px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 17px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+input:checked + .slider {
+  background-color: beige;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+.navbar .container {
+  min-width: 100%;
+}
+.navbar .container .navbar-toggler {
+  border: none;
+  padding: 0;
+}
+.navbar .container .navbar-toggler svg {
+  fill: var(--font-color);
+}
+.navbar .container .navbar-toggler svg:hover {
+  color: var(--hover-link);
+}
+.navbar .container .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .container .navbar-brand {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.3125rem;
+  margin-right: 0;
+}
+.navbar .container .navbar-brand svg {
+  fill: var(--font-color);
+}
+.navbar .container .logo {
+  text-decoration: none;
+}
+.navbar .container .logo a {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0;
+  transition: all 1s ease 0s;
+  padding-top: 8px;
+  color: var(--font-color);
+  text-decoration: none;
+}
+.navbar .container .logo a:hover {
+  color: var(--hover-link);
+}
+.navbar .MuiButtonBase-root {
+  margin: 0;
+}
+.navbar .navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  margin-bottom: 0;
+  list-style: none;
+  align-items: flex-end;
+  position: fixed;
+  top: 60px;
+  right: 7px;
+  height: 100vh;
+}
+.navbar .nav-item {
+  font: bold 1.5rem "Work Sans", "Arial Black", Gadget, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 2em 0;
+  writing-mode: vertical-lr;
+  font-size: 13px;
+}
+.navbar .nav-item a {
+  text-decoration: none;
+  color: var(--font-color);
+  transition: all 1s ease 0s;
+}
+.navbar .nav-item a:hover {
+  color: var(--hover-link);
+}
+
+section.home {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  transition: 0.5s;
+  width: 100%;
+  align-items: center;
+  height: 80vh;
+  width: 80%;
+  margin: 0 auto;
+}
+section.home .home-pic {
+  width: 70%;
+}
+section.home h1 {
+  font-family: "DM Serif Display";
+  font-size: 70px;
+  padding-bottom: 10px;
+}
+section.home h2 {
+  font: bold 2.8rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
+  font-size: small;
+  padding: 10px 0px 20px;
+  text-align: left;
+}
+section.home p {
+  width: 90%;
+  font-size: medium;
+  font-family: "Quicksand", sans-serif;
+}
+section.home p button {
+  font-size: 0.7em;
+  background-color: #545454;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.4s ease 0s;
+  padding: 5px;
+  font-weight: 300;
+  cursor: pointer;
+}
+section.home p button a {
+  color: beige;
+  text-decoration: none;
+  font-family: "Sackers Gothic Medium", sans-serif;
+  text-transform: lowercase;
+}
+section.home p button a:hover {
+  color: #fff;
+}
+section.home p button:hover {
+  background-color: #7a7a7a;
+}
+
+section.about {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+section.about .container {
+  display: flex;
+  overflow-y: scroll;
+  height: 60vh;
+}
+section.about .container .text {
+  padding-right: 20px;
+}
+section.about .container .text h3 {
+  font-size: 1.4rem;
+  font-family: "sackers gothic medium", sans-serif;
+}
+section.about .container .text p {
+  font-size: 16px;
+  padding: 20px 0px 20px 0px;
+  font-family: "Quicksand", sans-serif;
+}
+section.about .icon-container {
+  width: 100%;
+  text-align: center;
+}
+section.about .icon-container h3 {
+  font-size: 1.4rem;
+  font-family: "sackers gothic medium", sans-serif;
+  padding-bottom: 15px;
+  text-transform: lowercase;
+}
+section.about .icon-container svg {
+  height: 25px;
+  width: 25px;
+  padding: 4px;
+}
+section.about .icon-container .ispeak-icons,
+section.about .icon-container .design-icons,
+section.about .icon-container .framework-icons {
+  padding: 10px;
+}
+
+section.contact {
+  margin: 0 auto;
+  padding-bottom: 5%;
+  display: flex;
+  width: 80%;
+}
+section.contact .contact-form {
+  z-index: 1;
+  padding: 30px;
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--contact-background);
+  border-radius: 0px 10px 10px 0px;
+  overflow-y: scroll;
+  transition: all 1s ease 0s;
+}
+section.contact .contact-form input[type=text],
+section.contact .contact-form input[type=email],
+section.contact .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--font-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: transparent;
+}
+section.contact .contact-form input[type=submit] {
+  background-color: #00846a;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: "Sackers Gothic Medium", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+section.contact .contact-form input::-moz-placeholder, section.contact .contact-form textarea::-moz-placeholder {
+  color: var(--font-color);
+}
+section.contact .contact-form input::placeholder,
+section.contact .contact-form textarea::placeholder {
+  color: var(--font-color);
+}
+section.contact .contact-form input[type=submit]:hover {
+  background-color: #ffffff;
+  color: #00846A;
+}
+section.contact .contact-form label {
+  font-family: "Sackers Gothic Medium", sans-serif;
+  text-transform: lowercase;
+  text-align: left;
+  width: 100%;
+  color: var(--font-color);
+}
+
+.contact-background {
+  border-radius: 10px 0px 0px 10px;
+}
+
+footer {
+  position: fixed;
+  top: 80%;
+}
+footer .footer-icons {
+  padding: 3rem;
+  cursor: pointer;
+}
+footer .footer-icons svg {
+  cursor: pointer;
+  height: 15px;
+  transition: all 1s ease 0s;
+  fill: var(--font-color);
+}
+footer .footer-icons svg:hover {
+  fill: var(--hover-link);
+}
+footer a {
+  text-decoration: none;
+}
+
+section.projects {
+  width: 70%;
+  margin: 0 auto;
+  height: 60vh;
+  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.2rem;
+  overflow-y: scroll;
+}
+section.projects img {
+  border-radius: 10px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.projects .project {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section.projects .project:hover .image {
+  opacity: 0.2;
+}
+section.projects .project:hover .middle {
+  opacity: 1;
+}
+section.projects .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+section.projects .middle {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+section.projects .middle .text {
+  padding-top: 2.5em;
+}
+section.projects .middle h2 {
+  font-size: 20px;
+  text-transform: none;
+  font-family: "DM Serif Display", sans-serif;
+  color: #353430;
+  letter-spacing: 0px;
+  margin: 0;
+  padding: 0;
+}
+section.projects .middle p span {
+  background: #353430;
+  padding: 4px 10px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  font-size: 11px;
+  margin-right: 6px;
+  color: #FFFEF6;
+  font-weight: 500;
+}
+section.projects .middle .d-flex {
+  display: flex !important;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+section.resume {
+  width: 70%;
+  margin: 0 auto;
+  height: 60vh;
+  overflow-y: scroll;
+}
+section.resume .text {
+  text-align: center;
+}
+section.resume .text p {
+  color: var(--font-color);
+  transition: all 1s ease 0s;
+  font-family: "Quicksand", sans-serif;
+}
+section.resume .text p svg {
+  margin-left: 0.2rem;
+  fill: var(--font-color);
+  transition: all 1s ease 0s;
+}
+section.resume .text a {
+  font-family: "Sackers Gothic Medium", sans-serif;
+  text-transform: lowercase;
+  color: #353430;
+  text-decoration: none;
+}
+section.resume a:hover {
+  -webkit-text-decoration: underline 1px;
+          text-decoration: underline 1px;
+}
+section.resume .resume {
+  background-color: var(--cv-background);
+  padding: 20px;
+}
+section.resume .resume img {
+  width: 80%;
+}
+section.resume .resume .heading {
+  padding-top: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  height: auto;
+  flex-direction: column;
+}
+section.resume .resume .heading h2 {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 40px;
+  color: #00846A;
+  padding-top: 10px;
+  text-shadow: none;
+  padding-left: 0;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-weight: 500;
+  margin: 0;
+}
+section.resume .resume .heading h3 {
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  color: #646464;
+}
+section.resume .resume .flex-box {
+  display: flex;
+  padding-top: 40px;
+}
+section.resume .resume .flex-box .left-section,
+section.resume .resume .flex-box .right-section {
+  padding: 20px;
+}
+section.resume .resume .flex-box .left-section h3,
+section.resume .resume .flex-box .right-section h3 {
+  font-family: "Inter", sans-serif;
+  color: #00846A;
+  font-size: 13px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+section.resume .resume .flex-box .left-section p,
+section.resume .resume .flex-box .right-section p {
+  font-size: 5px;
+  font-family: "Inter", sans-serif;
+  color: #646464;
+  width: 60%;
+}
+section.resume .resume .flex-box .left-section h4,
+section.resume .resume .flex-box .right-section h4 {
+  font-size: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: #646464;
+}
+section.resume .resume .flex-box .left-section h5,
+section.resume .resume .flex-box .right-section h5 {
+  font-size: 6px;
+  font-family: "Inter", sans-serif;
+  color: #646464;
+  font-weight: 800;
+  width: 50%;
+}
+section.resume .resume .flex-box .left-section .h5-flex,
+section.resume .resume .flex-box .right-section .h5-flex {
+  display: flex;
+}
+section.resume .resume .flex-box .left-section .h5-flex .h5-right,
+section.resume .resume .flex-box .right-section .h5-flex .h5-right {
+  text-align: right;
+  width: 55%;
+}
+section.resume .resume .flex-box .left-section a,
+section.resume .resume .flex-box .right-section a {
+  font-size: 5px;
+  font-family: "Inter", sans-serif;
+  color: #646464;
+  text-decoration: none;
+}
+section.resume .resume .flex-box .left-section a:hover,
+section.resume .resume .flex-box .right-section a:hover {
+  font-size: 5px;
+  font-family: "Inter", sans-serif;
+  color: #00846A;
+  -webkit-text-decoration: underline #00846A;
+          text-decoration: underline #00846A;
+}
+section.resume .resume .flex-box .left-section {
+  width: 50%;
+}
+section.resume .resume .flex-box .right-section {
+  width: 50%;
+}
+
+.modal-overlay {
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  display: block;
+  background: white;
+  width: 70%;
+  height: 70%;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#root {
+  background-color: transparent;
+  height: 80vh;
+}
+
+body {
+  transition: all 1s ease 0s;
+}
+
+main {
+  position: fixed;
+  width: 100vw;
+}
+
+h2 {
+  font: bold 2rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 1em;
+  text-align: center;
+  padding-top: 7%;
+}
+
+section {
+  height: 70vh;
+  width: 70vw;
+}/*# sourceMappingURL=style.css.map */

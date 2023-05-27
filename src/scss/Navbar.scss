@@ -1,0 +1,188 @@
+/* 1 */
+:root {
+    --font-color: #545454;
+    --background-color: #ebd1c4;
+    --hover-link: #aba6a6;
+    --cv-background: white;
+    --contact-background: beige;
+}
+
+/* 2 */
+[data-theme="dark"] {
+    --font-color: beige;
+    --background-color: #353430;
+    --hover-link: rgb(119, 119, 106);
+    --cv-background: beige;
+    --contact-background: #646060;
+}
+
+/* 3 */
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+a {
+    color: var(--font-color);
+}
+
+/* Custom Dark Mode Toggle Element */
+.toggle-theme-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.toggle-theme-wrapper span {
+    font-size: 28px;
+}
+
+.toggle-theme {
+    position: relative;
+    display: inline-block;
+    height: 25px;
+    width: 50px;
+}
+
+.toggle-theme input {
+    display: none;
+}
+
+.slider {
+    background-color: #545454;
+    position: absolute;
+    cursor: pointer;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: 0.2s;
+}
+
+.slider:before {
+    background-color: var(--background-color);
+    bottom: 4px;
+    content: "";
+    height: 17px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 17px;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+input:checked+.slider {
+    background-color: beige;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+
+.navbar {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+
+    .container {
+        min-width: 100%;
+
+        .navbar-toggler {
+            border: none;
+            padding: 0;
+
+            svg {
+                fill: var(--font-color);
+
+                &:hover {
+                    color: var(--hover-link);
+                }
+            }
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .navbar-brand {
+            width: 3rem;
+            height: 3rem;
+            padding: 0.3125rem;
+            margin-right: 0;
+
+            svg {
+                fill: var(--font-color);
+            }
+        }
+
+
+
+        .logo {
+            text-decoration: none;
+
+            a {
+                font-family: "Bebas Neue", sans-serif;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                text-align: center;
+                margin: 0;
+                transition: all 1s ease 0s;
+                padding-top: 8px;
+                color: var(--font-color);
+                text-decoration: none;
+
+                &:hover {
+                    color: var(--hover-link);
+                }
+            }
+        }
+
+    }
+
+    .MuiButtonBase-root {
+        margin: 0;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+        margin-bottom: 0;
+        list-style: none;
+        align-items: flex-end;
+        position: fixed;
+        top: 60px;
+        right: 7px;
+        height: 100vh;
+    }
+
+    .nav-item {
+        font: bold 1.5rem "Work Sans", "Arial Black", Gadget, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 2em 0;
+        writing-mode: vertical-lr;
+        font-size: 13px;
+
+        a {
+            text-decoration: none;
+            color: var(--font-color);
+            transition: all 1s ease 0s;
+
+            &:hover {
+                color: var(--hover-link);
+            }
+        }
+    }
+}
