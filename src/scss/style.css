@@ -581,6 +581,8 @@ section.resume .resume .flex-box .right-section {
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   width: 60%;
+  height: 80vh;
+  overflow-y: scroll;
 }
 
 .modal-title {
@@ -618,6 +620,11 @@ section.resume .resume .flex-box .right-section {
   -webkit-text-decoration: underline 1px;
           text-decoration: underline 1px;
   color: #00846A;
+}
+.modal-body .video img,
+.modal-body .video video {
+  width: 100%;
+  height: 100%;
 }
 .modal-body h4 {
   font-size: 20px;

@@ -90,7 +90,10 @@ const Projects: React.FC = () => {
                 title="Style & Living"
                 content={
                     <>
-                        <div className="image" >
+                        <div className="video" >
+                            <video width="750" height="500" controls={false} autoPlay loop muted>
+                                <source src={require('../assets/styleliving.mov')} type="video/mp4" />
+                            </video>
 
                         </div>
 
@@ -134,8 +137,10 @@ const Projects: React.FC = () => {
                 title="The Coffee Game"
                 content={
                     <>
-                        <div className="image" >
-
+                        <div className="video" >
+                            <video width="750" height="500" controls={false} autoPlay loop muted>
+                                <source src={require('../assets/coffegame.mov')} type="video/mp4" />
+                            </video>
                         </div>
 
                         <h4>About</h4>
@@ -190,8 +195,10 @@ const Projects: React.FC = () => {
                 title="Bortakväll"
                 content={
                     <>
-                        <div className="image" >
-
+                        <div className="video" >
+                            <video width="750" height="500" controls={false} autoPlay loop muted>
+                                <source src={require('../assets/bortakvall.mov')} type="video/mp4" />
+                            </video>
                         </div>
 
                         <h4>About</h4>
