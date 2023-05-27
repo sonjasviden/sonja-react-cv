@@ -14,10 +14,16 @@ function Home() {
                         <button><a href="/projects">
                             <Link to="/projects">Projects</Link>
                         </a></button>,
-                        <button><a href="/about">About</a></button>,
-                        <button><a href="/resume">Resumé</a></button>, or send me an email at either
+                        <button><a href="/about">
+                            <Link to="/about">About</Link>
+                        </a></button>,
+                        <button><a href="/resume">
+                            <Link to="/resume">Resume</Link>
+                        </a></button>, or send me an email at either
                         <button><a href="mailto:sonja.sviden@live.com">sonja.sviden@live.com</a></button> or fill in the
-                        <button><a href="/contact">contact form</a></button>.
+                        <button><a href="/contact">
+                            <Link to="/contact">Contact</Link>
+                        </a></button>.
                     </p>
                 </div>
                 <div>
