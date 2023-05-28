@@ -676,7 +676,7 @@ section.resume .resume .flex-box .right-section {
 
 @media screen and (max-width: 480px) {
   section.resume {
-    height: 65vh;
+    height: 50vh;
   }
   section.resume .resume .heading h2 {
     font-size: 30px;
