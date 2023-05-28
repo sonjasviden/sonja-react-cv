@@ -4,29 +4,6 @@ section.resume {
     height: 60vh;
     overflow-y: scroll;
 
-    .text {
-        text-align: center;
-
-        p {
-            color: var(--font-color);
-            transition: all 1s ease 0s;
-            font-family: 'Quicksand', sans-serif;
-
-            svg {
-                margin-left: 0.2rem;
-                fill: var(--font-color);
-                transition: all 1s ease 0s;
-            }
-        }
-
-        a {
-            font-family: 'Sackers Gothic Medium', sans-serif;
-            text-transform: lowercase;
-            color: #353430;
-            text-decoration: none;
-        }
-    }
-
     a:hover {
         text-decoration: underline 1px;
     }
@@ -140,5 +117,28 @@ section.resume {
                 width: 50%;
             }
         }
+    }
+}
+
+.text {
+    text-align: center;
+
+    p {
+        color: var(--font-color);
+        transition: all 1s ease 0s;
+        font-family: 'Quicksand', sans-serif;
+
+        svg {
+            margin-left: 0.2rem;
+            fill: var(--font-color);
+            transition: all 1s ease 0s;
+        }
+    }
+
+    a {
+        font-family: 'Sackers Gothic Medium', sans-serif;
+        text-transform: lowercase;
+        color: #353430;
+        text-decoration: none;
     }
 }

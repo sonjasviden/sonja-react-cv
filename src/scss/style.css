@@ -416,7 +416,7 @@ section.projects .middle h2 {
   font-size: 20px;
   text-transform: none;
   font-family: "DM Serif Display", sans-serif;
-  color: #353430;
+  color: var(--font-color);
   letter-spacing: 0px;
   margin: 0;
   padding: 0;
@@ -442,25 +442,6 @@ section.resume {
   margin: 0 auto;
   height: 60vh;
   overflow-y: scroll;
-}
-section.resume .text {
-  text-align: center;
-}
-section.resume .text p {
-  color: var(--font-color);
-  transition: all 1s ease 0s;
-  font-family: "Quicksand", sans-serif;
-}
-section.resume .text p svg {
-  margin-left: 0.2rem;
-  fill: var(--font-color);
-  transition: all 1s ease 0s;
-}
-section.resume .text a {
-  font-family: "Sackers Gothic Medium", sans-serif;
-  text-transform: lowercase;
-  color: #353430;
-  text-decoration: none;
 }
 section.resume a:hover {
   -webkit-text-decoration: underline 1px;
@@ -567,6 +548,26 @@ section.resume .resume .flex-box .left-section {
 }
 section.resume .resume .flex-box .right-section {
   width: 50%;
+}
+
+.text {
+  text-align: center;
+}
+.text p {
+  color: var(--font-color);
+  transition: all 1s ease 0s;
+  font-family: "Quicksand", sans-serif;
+}
+.text p svg {
+  margin-left: 0.2rem;
+  fill: var(--font-color);
+  transition: all 1s ease 0s;
+}
+.text a {
+  font-family: "Sackers Gothic Medium", sans-serif;
+  text-transform: lowercase;
+  color: #353430;
+  text-decoration: none;
 }
 
 .modal-overlay {
