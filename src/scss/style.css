@@ -241,9 +241,11 @@ section.home p button:hover {
     font-family: "DM Serif Display";
     font-size: 40px;
     padding-bottom: 10px;
+    margin: 0;
   }
   section.home h2 {
     font-size: 10px;
+    padding: 10px 20px 20px 0px;
   }
   section.home p {
     font-size: 12px;
@@ -299,13 +301,15 @@ section.about .icon-container .framework-icons {
   padding: 10px;
 }
 
-section.about .container {
-  display: flex;
-  overflow-y: scroll;
-  height: 65vh;
-  flex-direction: column;
+@media screen and (max-width: 480px) {
+  section.about .container {
+    height: 65vh;
+    flex-direction: column;
+  }
+  section.about .container .text {
+    padding-right: 0;
+  }
 }
-
 section.contact {
   margin: 0 auto;
   padding-bottom: 5%;

@@ -41,9 +41,12 @@ section.about .icon-container .framework-icons {
   padding: 10px;
 }
 
-section.about .container {
-  display: flex;
-  overflow-y: scroll;
-  height: 65vh;
-  flex-direction: column;
+@media screen and (max-width: 480px) {
+  section.about .container {
+    height: 65vh;
+    flex-direction: column;
+  }
+  section.about .container .text {
+    padding-right: 0;
+  }
 }/*# sourceMappingURL=About.css.map */
