@@ -81,6 +81,28 @@ section.contact {
 
         .contact-background {
             border-radius: 10px 10px 0px 0px;
+            height: 40%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section.contact {
+        margin: 0 auto;
+        padding-bottom: 5%;
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+
+        .contact-form {
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        .contact-background {
+            border-radius: 10px 10px 0px 0px;
+            height: 40%;
+            object-fit: cover;
         }
     }
 }

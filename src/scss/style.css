@@ -258,6 +258,31 @@ section.home p button:hover {
     display: none;
   }
 }
+@media screen and (max-width: 1000px) {
+  section.home {
+    padding-top: 20%;
+  }
+  section.home h1 {
+    font-family: "DM Serif Display";
+    font-size: 40px;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+  section.home h2 {
+    font-size: 10px;
+    padding: 10px 20px 20px 0px;
+  }
+  section.home p {
+    font-size: 12px;
+  }
+  section.home p button {
+    font-size: 0.7em;
+    padding: 2px;
+  }
+  section.home .home-pic {
+    display: none;
+  }
+}
 section.about {
   width: 70%;
   margin: 0 auto;
@@ -387,6 +412,27 @@ section.contact .contact-form label {
   }
   section.contact .contact-background {
     border-radius: 10px 10px 0px 0px;
+    height: 40%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.contact {
+    margin: 0 auto;
+    padding-bottom: 5%;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+  }
+  section.contact .contact-form {
+    border-radius: 0px 0px 10px 10px;
+  }
+  section.contact .contact-background {
+    border-radius: 10px 10px 0px 0px;
+    height: 40%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 footer {
@@ -804,5 +850,11 @@ section {
   h2 {
     font: bold 1.5rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
     padding-top: 20%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  h2 {
+    font: bold 1.5rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
+    padding-top: 10%;
   }
 }/*# sourceMappingURL=style.css.map */
