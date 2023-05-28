@@ -189,6 +189,10 @@ input:checked+.slider {
             &:hover {
                 color: var(--hover-link);
             }
+
+            &:active {
+                color: var(--hover-link);
+            }
         }
     }
 }

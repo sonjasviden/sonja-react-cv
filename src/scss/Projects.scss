@@ -86,3 +86,11 @@ section.projects {
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+
+    section.projects {
+        width: 65%;
+        grid-template-columns: none;
+    }
+}

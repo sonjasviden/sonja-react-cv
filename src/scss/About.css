@@ -39,4 +39,11 @@ section.about .icon-container .ispeak-icons,
 section.about .icon-container .design-icons,
 section.about .icon-container .framework-icons {
   padding: 10px;
+}
+
+section.about .container {
+  display: flex;
+  overflow-y: scroll;
+  height: 65vh;
+  flex-direction: column;
 }/*# sourceMappingURL=About.css.map */

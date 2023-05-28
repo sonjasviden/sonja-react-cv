@@ -57,7 +57,7 @@
 
     a:hover {
         text-decoration: underline 1px;
-        color: #00846A;
+        color: #ebd1c4;
     }
 
     .video {
@@ -99,5 +99,15 @@
 
     svg {
         fill: var(--modalText-color);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal-content {
+        width: 75%;
+    }
+
+    .modal-title {
+        font-size: 20px;
     }
 }

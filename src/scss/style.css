@@ -176,6 +176,9 @@ input:checked + .slider {
 .navbar .nav-item a:hover {
   color: var(--hover-link);
 }
+.navbar .nav-item a:active {
+  color: var(--hover-link);
+}
 
 section.home {
   display: flex;
@@ -230,6 +233,29 @@ section.home p button:hover {
   background-color: #7a7a7a;
 }
 
+@media screen and (max-width: 480px) {
+  section.home {
+    padding-top: 20%;
+  }
+  section.home h1 {
+    font-family: "DM Serif Display";
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  section.home h2 {
+    font-size: 10px;
+  }
+  section.home p {
+    font-size: 12px;
+  }
+  section.home p button {
+    font-size: 0.7em;
+    padding: 2px;
+  }
+  section.home .home-pic {
+    display: none;
+  }
+}
 section.about {
   width: 70%;
   margin: 0 auto;
@@ -271,6 +297,13 @@ section.about .icon-container .ispeak-icons,
 section.about .icon-container .design-icons,
 section.about .icon-container .framework-icons {
   padding: 10px;
+}
+
+section.about .container {
+  display: flex;
+  overflow-y: scroll;
+  height: 65vh;
+  flex-direction: column;
 }
 
 section.contact {
@@ -337,12 +370,27 @@ section.contact .contact-form label {
   border-radius: 10px 0px 0px 10px;
 }
 
+@media screen and (max-width: 480px) {
+  section.contact {
+    margin: 0 auto;
+    padding-bottom: 5%;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+  }
+  section.contact .contact-form {
+    border-radius: 0px 0px 10px 10px;
+  }
+  section.contact .contact-background {
+    border-radius: 10px 10px 0px 0px;
+  }
+}
 footer {
   position: fixed;
-  top: 80%;
+  bottom: 0;
 }
 footer .footer-icons {
-  padding: 3rem;
+  padding: 2rem;
   cursor: pointer;
 }
 footer .footer-icons svg {
@@ -437,6 +485,12 @@ section.projects .middle .d-flex {
   padding-top: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  section.projects {
+    width: 65%;
+    grid-template-columns: none;
+  }
+}
 section.resume {
   width: 70%;
   margin: 0 auto;
@@ -570,6 +624,45 @@ section.resume .resume .flex-box .right-section {
   text-decoration: none;
 }
 
+@media screen and (max-width: 480px) {
+  section.resume .resume .heading h2 {
+    font-size: 30px;
+  }
+  section.resume .resume .flex-box {
+    padding-top: 0px;
+  }
+  section.resume .resume .flex-box .left-section,
+  section.resume .resume .flex-box .right-section {
+    padding: 10px;
+  }
+  section.resume .resume .flex-box .left-section h3,
+  section.resume .resume .flex-box .right-section h3 {
+    font-size: 9px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin: 0;
+  }
+  section.resume .resume .flex-box .left-section h4,
+  section.resume .resume .flex-box .right-section h4 {
+    margin-bottom: 5px;
+    font-size: 7px;
+  }
+  section.resume .resume .flex-box .left-section p,
+  section.resume .resume .flex-box .right-section p {
+    margin: 0px 0px 5px;
+    width: 100%;
+  }
+  section.resume .resume .flex-box .right-section p {
+    width: 100%;
+  }
+  section.resume .resume .flex-box .left-section h5 {
+    font-size: 4.2px;
+    margin: 0;
+  }
+  section.resume .resume .flex-box .left-section .h5-flex .h5-right {
+    font-size: 4px;
+  }
+}
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -607,7 +700,6 @@ section.resume .resume .flex-box .right-section {
   top: 10px;
   right: 10px;
   font-size: 1.5rem;
-  transition: 0.5s ease-in;
 }
 
 .modal-close-btn:hover {
@@ -629,7 +721,7 @@ section.resume .resume .flex-box .right-section {
 .modal-body a:hover {
   -webkit-text-decoration: underline 1px;
           text-decoration: underline 1px;
-  color: #00846A;
+  color: #ebd1c4;
 }
 .modal-body .video img,
 .modal-body .video video {
@@ -664,6 +756,18 @@ section.resume .resume .flex-box .right-section {
   fill: var(--modalText-color);
 }
 
+@media screen and (max-width: 480px) {
+  .modal-content {
+    width: 75%;
+  }
+  .modal-title {
+    font-size: 20px;
+  }
+}
+* {
+  margin: 0;
+}
+
 #root {
   background-color: transparent;
   height: 80vh;
@@ -690,4 +794,11 @@ h2 {
 section {
   height: 70vh;
   width: 70vw;
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font: bold 1.5rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
+    padding-top: 20%;
+  }
 }/*# sourceMappingURL=style.css.map */

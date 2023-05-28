@@ -59,3 +59,32 @@ section.home {
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    section.home {
+        padding-top: 20%;
+
+        h1 {
+            font-family: "DM Serif Display";
+            font-size: 40px;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 10px;
+        }
+
+        p {
+            font-size: 12px;
+
+            button {
+                font-size: 0.7em;
+                padding: 2px;
+            }
+        }
+
+        .home-pic {
+            display: none;
+        }
+    }
+}

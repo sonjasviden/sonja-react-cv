@@ -142,3 +142,68 @@ section.resume {
         text-decoration: none;
     }
 }
+
+@media screen and (max-width: 480px) {
+    section.resume {
+        .resume {
+
+            .heading {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+
+            .flex-box {
+                padding-top: 0px;
+
+                .left-section,
+                .right-section {
+                    padding: 10px;
+
+                    h3 {
+                        font-size: 9px;
+                        padding-bottom: 10px;
+                        padding-top: 5px;
+                        margin: 0;
+                    }
+
+                    h4 {
+                        margin-bottom: 5px;
+                        font-size: 7px;
+                    }
+
+                    p {
+                        margin: 0px 0px 5px;
+                        width: 100%;
+                    }
+                }
+
+                .right-section {
+                    p {
+                        width: 100%;
+                    }
+                }
+
+                .left-section {
+                    h5 {
+                        font-size: 4.2px;
+                        margin: 0;
+                    }
+
+                    .h5-flex {
+                        .h5-right {
+                            font-size: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // section.resume .resume .flex-box .right-section p {
+    //     font-size: 5px;
+    //     font-family: "Inter", sans-serif;
+    //     color: #646464;
+    //     width: 100%;
+    // }
+}

@@ -13,7 +13,9 @@
 @import "./Resume.scss";
 @import "./Modal.scss";
 
-
+* {
+    margin: 0;
+}
 
 #root {
     background-color: transparent;
@@ -41,4 +43,11 @@ h2 {
 section {
     height: 70vh;
     width: 70vw;
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font: bold 1.5rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
+        padding-top: 20%;
+    }
 }

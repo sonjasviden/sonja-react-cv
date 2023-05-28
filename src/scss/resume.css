@@ -129,4 +129,44 @@ section.resume .resume .flex-box .right-section {
   text-transform: lowercase;
   color: #353430;
   text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  section.resume .resume .heading h2 {
+    font-size: 30px;
+  }
+  section.resume .resume .flex-box {
+    padding-top: 0px;
+  }
+  section.resume .resume .flex-box .left-section,
+  section.resume .resume .flex-box .right-section {
+    padding: 10px;
+  }
+  section.resume .resume .flex-box .left-section h3,
+  section.resume .resume .flex-box .right-section h3 {
+    font-size: 9px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin: 0;
+  }
+  section.resume .resume .flex-box .left-section h4,
+  section.resume .resume .flex-box .right-section h4 {
+    margin-bottom: 5px;
+    font-size: 7px;
+  }
+  section.resume .resume .flex-box .left-section p,
+  section.resume .resume .flex-box .right-section p {
+    margin: 0px 0px 5px;
+    width: 100%;
+  }
+  section.resume .resume .flex-box .right-section p {
+    width: 100%;
+  }
+  section.resume .resume .flex-box .left-section h5 {
+    font-size: 4.2px;
+    margin: 0;
+  }
+  section.resume .resume .flex-box .left-section .h5-flex .h5-right {
+    font-size: 4px;
+  }
 }/*# sourceMappingURL=Resume.css.map */

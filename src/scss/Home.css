@@ -49,4 +49,28 @@ section.home p button a:hover {
 }
 section.home p button:hover {
   background-color: #7a7a7a;
+}
+
+@media screen and (max-width: 480px) {
+  section.home {
+    padding-top: 20%;
+  }
+  section.home h1 {
+    font-family: "DM Serif Display";
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  section.home h2 {
+    font-size: 10px;
+  }
+  section.home p {
+    font-size: 12px;
+  }
+  section.home p button {
+    font-size: 0.7em;
+    padding: 2px;
+  }
+  section.home .home-pic {
+    display: none;
+  }
 }/*# sourceMappingURL=Home.css.map */

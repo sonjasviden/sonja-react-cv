@@ -170,4 +170,7 @@ input:checked + .slider {
 }
 .navbar .nav-item a:hover {
   color: var(--hover-link);
+}
+.navbar .nav-item a:active {
+  color: var(--hover-link);
 }/*# sourceMappingURL=Navbar.css.map */

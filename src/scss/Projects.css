@@ -75,4 +75,11 @@ section.projects .middle .d-flex {
   display: flex !important;
   justify-content: center;
   padding-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  section.projects {
+    width: 65%;
+    grid-template-columns: none;
+  }
 }/*# sourceMappingURL=Projects.css.map */

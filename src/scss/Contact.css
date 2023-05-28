@@ -60,4 +60,20 @@ section.contact .contact-form label {
 
 .contact-background {
   border-radius: 10px 0px 0px 10px;
+}
+
+@media screen and (max-width: 480px) {
+  section.contact {
+    margin: 0 auto;
+    padding-bottom: 5%;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+  }
+  section.contact .contact-form {
+    border-radius: 0px 0px 10px 10px;
+  }
+  section.contact .contact-background {
+    border-radius: 10px 10px 0px 0px;
+  }
 }/*# sourceMappingURL=Contact.css.map */
