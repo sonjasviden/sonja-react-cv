@@ -17,11 +17,11 @@
   width: 65%;
   height: 80vh;
   overflow-y: scroll;
-  background-color: var(--modal-background);
 }
 
 .modal-title {
   margin-top: 0;
+  transition: 0.5s ease-in;
 }
 
 .modal-close-btn {

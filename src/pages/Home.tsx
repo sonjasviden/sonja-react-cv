@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -5,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Home() {
 
     return (
-        <main>
+        <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75, ease: 'easeOut' }}>
             <section className="home">
                 <div>
                     <h1>Hi, I'm Sonja Svidén</h1>
@@ -26,7 +27,7 @@ function Home() {
                     <img src={require('../assets/header-pic.png')} className='home-pic' alt='header-pic' />
                 </div>
             </section>
-        </main>
+        </motion.main>
     );
 }
 

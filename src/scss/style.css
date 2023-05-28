@@ -580,6 +580,7 @@ section.resume .resume .flex-box .right-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.5s ease-in;
 }
 
 .modal-content {
@@ -594,6 +595,7 @@ section.resume .resume .flex-box .right-section {
 
 .modal-title {
   margin-top: 0;
+  transition: 0.5s ease-in;
 }
 
 .modal-close-btn {

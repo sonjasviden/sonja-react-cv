@@ -1,8 +1,9 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 function About() {
     return (
-        <main>
+        <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75, ease: 'easeOut' }}>
             <h2>About.</h2>
 
             <section className="about">
@@ -157,7 +158,7 @@ function About() {
                     </div>
                 </div>
             </section>
-        </main>
+        </motion.main>
     );
 }
 

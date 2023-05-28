@@ -1,12 +1,13 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 function Contact() {
     return (
-        <main>
+        <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75, ease: 'easeOut' }}>
             <h2>Contact.</h2>
 
             <section className="contact">
-                <img src={require('../assets/business_card.png')} className='contact-background' alt='business card' />
+                <img src={require('../assets/business_card.jpg')} className='contact-background' alt='business card' />
 
                 <div className="contact-form">
                     <form action="https://formspree.io/f/xlekaobw" method="POST">
@@ -29,7 +30,7 @@ function Contact() {
                     </form>
                 </div>
             </section>
-        </main>
+        </motion.main>
     );
 }
 

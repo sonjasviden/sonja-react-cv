@@ -1,8 +1,9 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 function Resume() {
     return (
-        <main>
+        <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75, ease: 'easeOut' }}>
             <h2>Resume.</h2>
             <div className="text">
                 <a target="_blank" rel="noreferrer" href={require('../assets/sonjasviden_cv.pdf')}>
@@ -104,7 +105,7 @@ function Resume() {
                     </div>
                 </div>
             </section>
-        </main>
+        </motion.main>
     );
 }
 

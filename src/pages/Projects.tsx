@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
+import { motion } from 'framer-motion';
 
 const Projects: React.FC = () => {
 
@@ -34,7 +35,7 @@ const Projects: React.FC = () => {
 
     return (
         <>
-            <main>
+            <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75, ease: 'easeOut' }}>
                 <h2>Projects.</h2>
 
                 <section className="projects">
@@ -70,7 +71,7 @@ const Projects: React.FC = () => {
                     </div>
 
                     <div onClick={openModal3} className="project bortakvall">
-                        <img src={require('../assets/bortakvall.jpg')} className='image' alt='bortakvall' />
+                        <img loading='lazy' src={require('../assets/bortakvall.jpg')} className='image' alt='bortakvall' />
                         <div className="middle">
                             <div className="text">
                                 <h2>Bortakväll</h2>
@@ -84,7 +85,7 @@ const Projects: React.FC = () => {
                     </div>
 
                 </section>
-            </main>
+            </motion.main>
             <Modal isOpen={modal1Open}
                 onClose={closeModal1}
                 title="Style & Living"

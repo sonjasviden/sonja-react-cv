@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 interface ModalProps {
@@ -9,7 +10,7 @@ interface ModalProps {
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, content }) => {
     return (
-        <>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75, ease: 'easeOut' }}>
             {isOpen && (
                 <div className="modal-overlay">
                     <div className="modal-content">
@@ -21,7 +22,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, content }) => {
                     </div>
                 </div>
             )}
-        </>
+        </motion.div>
     );
 };
 
