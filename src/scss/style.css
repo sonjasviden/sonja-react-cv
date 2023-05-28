@@ -10,6 +10,9 @@
   --hover-link: #aba6a6;
   --cv-background: white;
   --contact-background: beige;
+  --modal-background: beige;
+  --modalText-color: #545454;
+  --span-background: #ebd1c4;
 }
 
 /* 2 */
@@ -19,6 +22,9 @@
   --hover-link: rgb(119, 119, 106);
   --cv-background: beige;
   --contact-background: #646060;
+  --modal-background: #393431;
+  --modalText-color: beige;
+  --span-background: #ebd1c4;
 }
 
 /* 3 */
@@ -576,13 +582,13 @@ section.resume .resume .flex-box .right-section {
 }
 
 .modal-content {
-  background-color: beige;
   padding: 20px;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  width: 60%;
+  width: 65%;
   height: 80vh;
   overflow-y: scroll;
+  background-color: var(--modal-background);
 }
 
 .modal-title {
@@ -590,19 +596,18 @@ section.resume .resume .flex-box .right-section {
 }
 
 .modal-close-btn {
-  background-color: #ccc;
+  background-color: transparent;
   border: none;
   color: #fff;
-  padding: 8px 16px;
   border-radius: 4px;
-  cursor: pointer;
   position: absolute;
   top: 10px;
   right: 10px;
+  font-size: 1.5rem;
 }
 
 .modal-close-btn:hover {
-  background-color: #999;
+  transition: all 1s ease 0s;
 }
 
 .modal-title {
@@ -610,6 +615,7 @@ section.resume .resume .flex-box .right-section {
   font-size: 30px;
   padding: 15px;
   text-align: center;
+  color: var(--modalText-color);
 }
 
 .modal-body a {
@@ -631,22 +637,27 @@ section.resume .resume .flex-box .right-section {
   font-family: "Inter", sans-serif;
   font-weight: bold;
   padding: 10px 0px 10px 0px;
+  color: var(--modalText-color);
 }
 .modal-body p {
   font-size: 13px;
   font-family: "Inter", sans-serif;
 }
 .modal-body p span {
-  background-color: rgba(239, 233, 228, 0.631372549);
+  background-color: var(--span-background);
   padding: 8px 13px;
   border-radius: 4px;
   text-transform: capitalize;
   font-size: 11px;
   margin-right: 6px;
   font-weight: 700;
+  color: #545454;
 }
 .modal-body .d-flex {
   display: flex !important;
+}
+.modal-body svg {
+  fill: var(--modalText-color);
 }
 
 #root {

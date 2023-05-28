@@ -13,9 +13,11 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, content }) => {
             {isOpen && (
                 <div className="modal-overlay">
                     <div className="modal-content">
-                        <h2 className='modal-title'>{title}</h2>
+                        <div className='heading-modal'>
+                            <h2 className='modal-title'>{title}</h2>
+                            <button className="modal-close-btn" onClick={onClose}>✕</button>
+                        </div>
                         <div className="modal-body">{content}</div>
-                        <button className="modal-close-btn" onClick={onClose}>Close</button>
                     </div>
                 </div>
             )}
