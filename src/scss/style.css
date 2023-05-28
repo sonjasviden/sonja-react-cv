@@ -601,12 +601,13 @@ section.resume .resume .flex-box .right-section {
 .modal-close-btn {
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: var(--font-color);
   border-radius: 4px;
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 1.5rem;
+  transition: 0.5s ease-in;
 }
 
 .modal-close-btn:hover {

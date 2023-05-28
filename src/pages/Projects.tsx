@@ -90,7 +90,7 @@ const Projects: React.FC = () => {
                 onClose={closeModal1}
                 title="Style & Living"
                 content={
-                    <>
+                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5, ease: 'easeOut' }}>
                         <div className="video" >
                             <video width="750" height="500" controls={false} autoPlay loop muted>
                                 <source src={require('../assets/styleliving.mov')} type="video/mp4" />
@@ -128,7 +128,7 @@ const Projects: React.FC = () => {
                         </svg> Github</h4>
                         <p><a target="_blank" rel="noreferrer"
                             href="https://github.com/sonjasviden/styleliving">github.com/sonjasviden/styleliving</a></p>
-                    </>
+                    </motion.div>
                 }
             />
 
@@ -137,7 +137,7 @@ const Projects: React.FC = () => {
                 onClose={closeModal2}
                 title="The Coffee Game"
                 content={
-                    <>
+                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5, ease: 'easeOut' }}>
                         <div className="video" >
                             <video width="750" height="500" controls={false} autoPlay loop muted>
                                 <source src={require('../assets/coffegame.mov')} type="video/mp4" />
@@ -185,7 +185,7 @@ const Projects: React.FC = () => {
                         <p><a target="_blank" rel="noreferrer"
                             href="https://github.com/the-hive-resistance/fed22-api-ktv-grupp-11">github.com/sonjasviden/coffeegame</a>
                         </p>
-                    </>
+                    </motion.div>
                 }
             />
 
@@ -195,7 +195,7 @@ const Projects: React.FC = () => {
                 onClose={closeModal3}
                 title="Bortakväll"
                 content={
-                    <>
+                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5, ease: 'easeOut' }}>
                         <div className="video" >
                             <video width="750" height="500" controls={false} autoPlay loop muted>
                                 <source src={require('../assets/bortakvall.mov')} type="video/mp4" />
@@ -237,7 +237,7 @@ const Projects: React.FC = () => {
                         <p><a target="_blank" rel="noreferrer"
                             href="https://github.com/sonjasviden/_bortakvall">github.com/sonjasviden/bortakvall</a>
                         </p>
-                    </>
+                    </motion.div>
                 }
             />
         </>
