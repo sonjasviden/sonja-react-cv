@@ -1,6 +1,5 @@
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import { motion } from 'framer-motion';
-import React from 'react';
 
 function Contact() {
     const [state, handleSubmit] = useForm("xlekaobw");
