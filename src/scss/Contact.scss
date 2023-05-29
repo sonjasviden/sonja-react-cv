@@ -28,7 +28,7 @@ section.contact {
             background-color: transparent;
         }
 
-        input[type=submit] {
+        .submit-btn {
             background-color: #00846a;
             color: #ffffff;
             padding: 12px 20px;
@@ -41,16 +41,15 @@ section.contact {
             font-weight: 600;
             letter-spacing: 0.1em;
 
+            &:hover {
+                background-color: #ffffff;
+                color: #00846A;
+            }
         }
 
         input::placeholder,
         textarea::placeholder {
             color: var(--font-color);
-        }
-
-        input[type=submit]:hover {
-            background-color: #ffffff;
-            color: #00846A;
         }
 
         label {
@@ -63,9 +62,39 @@ section.contact {
     }
 }
 
+.thanks-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+
+    h2 {
+        font-family: 'Quicksand', sans-serif;
+        padding-top: 20px;
+        margin-bottom: 0;
+        font-size: 3rem;
+    }
+
+    h4 {
+        color: #00846A;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    p {
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    svg {
+        fill: #00846A;
+        transition: all 1s ease 0s;
+    }
+}
+
 .contact-background {
     border-radius: 10px 0px 0px 10px;
 }
+
 
 @media screen and (max-width: 480px) {
     section.contact {

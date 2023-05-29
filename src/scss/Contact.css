@@ -26,7 +26,7 @@ section.contact .contact-form textarea {
   resize: vertical;
   background-color: transparent;
 }
-section.contact .contact-form input[type=submit] {
+section.contact .contact-form .submit-btn {
   background-color: #00846a;
   color: #ffffff;
   padding: 12px 20px;
@@ -39,6 +39,10 @@ section.contact .contact-form input[type=submit] {
   font-weight: 600;
   letter-spacing: 0.1em;
 }
+section.contact .contact-form .submit-btn:hover {
+  background-color: #ffffff;
+  color: #00846A;
+}
 section.contact .contact-form input::-moz-placeholder, section.contact .contact-form textarea::-moz-placeholder {
   color: var(--font-color);
 }
@@ -46,16 +50,37 @@ section.contact .contact-form input::placeholder,
 section.contact .contact-form textarea::placeholder {
   color: var(--font-color);
 }
-section.contact .contact-form input[type=submit]:hover {
-  background-color: #ffffff;
-  color: #00846A;
-}
 section.contact .contact-form label {
   font-family: "Sackers Gothic Medium", sans-serif;
   text-transform: lowercase;
   text-align: left;
   width: 100%;
   color: var(--font-color);
+}
+
+.thanks-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.thanks-msg h2 {
+  font-family: "Quicksand", sans-serif;
+  padding-top: 20px;
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+.thanks-msg h4 {
+  color: #00846A;
+  font-family: "Quicksand", sans-serif;
+}
+.thanks-msg p {
+  font-family: "Quicksand", sans-serif;
+}
+.thanks-msg svg {
+  fill: #00846A;
+  transition: all 1s ease 0s;
 }
 
 .contact-background {
