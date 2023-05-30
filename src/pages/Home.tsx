@@ -8,7 +8,7 @@ function Home() {
     return (
         <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75, ease: 'easeOut' }}>
             <section className="home">
-                <div>
+                <div className='text-left'>
                     <h1>Hi, I'm Sonja Svidén</h1>
                     <h2>Frontend developer with knowledge in UX/UI design</h2>
                     <p>Working with my hands to make magic happen on the internet. View my <button><a href="/projects">
@@ -23,7 +23,7 @@ function Home() {
                             </a></button>.
                     </p>
                 </div>
-                <div>
+                <div className='image-right'>
                     <img src={require('../assets/header-pic.png')} className='home-pic' alt='header-pic' />
                 </div>
             </section>

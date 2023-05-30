@@ -183,27 +183,34 @@ input:checked + .slider {
 section.home {
   display: flex;
   justify-content: center;
-  padding-top: 5%;
+  padding-top: 10%;
   transition: 0.5s;
   width: 100%;
   align-items: center;
   height: 80vh;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
-section.home .home-pic {
-  width: 70%;
+section.home .text-left {
+  width: 50%;
+}
+section.home .image-right {
+  width: 35%;
+}
+section.home .image-right .home-pic {
+  width: 100%;
 }
 section.home h1 {
-  font-family: "DM Serif Display";
+  font-family: "DM Serif Display", sans-serif;
   font-size: 70px;
-  padding-bottom: 10px;
 }
 section.home h2 {
-  font: bold 2.8rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
-  font-size: small;
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 18px;
   padding: 10px 0px 20px;
   text-align: left;
+  text-transform: none;
+  letter-spacing: 2px;
 }
 section.home p {
   width: 90%;
