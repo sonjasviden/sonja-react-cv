@@ -65,6 +65,19 @@ section.contact .contact-form label {
   height: 100vh;
   flex-direction: column;
 }
+.thanks-msg .back-btn {
+  margin-top: 3rem;
+  transition: all 1s ease 0s;
+}
+.thanks-msg .back-btn a {
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  color: var(--font-color);
+  transition: all 1s ease 0s;
+}
+.thanks-msg .back-btn svg {
+  margin-right: 10px;
+}
 .thanks-msg h2 {
   font-family: "Quicksand", sans-serif;
   padding-top: 20px;

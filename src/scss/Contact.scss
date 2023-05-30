@@ -69,6 +69,22 @@ section.contact {
     height: 100vh;
     flex-direction: column;
 
+    .back-btn {
+        margin-top: 3rem;
+        transition: all 1s ease 0s;
+
+        a {
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+            color: var(--font-color);
+            transition: all 1s ease 0s;
+        }
+
+        svg {
+            margin-right: 10px;
+        }
+    }
+
     h2 {
         font-family: 'Quicksand', sans-serif;
         padding-top: 20px;

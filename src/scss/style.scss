@@ -45,16 +45,16 @@ section {
     width: 70vw;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     h2 {
         font: bold 1.5rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
         padding-top: 20%;
     }
 }
 
-@media screen and (max-width: 1000px) {
-    h2 {
-        font: bold 1.5rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
-        padding-top: 20%;
-    }
-}
+// @media screen and (max-width: 1000px) {
+//     h2 {
+//         font: bold 1.5rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
+//         padding-top: 10%;
+//     }
+// }

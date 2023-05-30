@@ -402,6 +402,19 @@ section.contact .contact-form label {
   height: 100vh;
   flex-direction: column;
 }
+.thanks-msg .back-btn {
+  margin-top: 3rem;
+  transition: all 1s ease 0s;
+}
+.thanks-msg .back-btn a {
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  color: var(--font-color);
+  transition: all 1s ease 0s;
+}
+.thanks-msg .back-btn svg {
+  margin-right: 10px;
+}
 .thanks-msg h2 {
   font-family: "Quicksand", sans-serif;
   padding-top: 20px;
@@ -487,7 +500,7 @@ section.projects {
   height: 60vh;
   padding-bottom: 5%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 1.2rem;
   overflow-y: scroll;
 }
@@ -874,13 +887,7 @@ section {
   width: 70vw;
 }
 
-@media screen and (max-width: 480px) {
-  h2 {
-    font: bold 1.5rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
-    padding-top: 20%;
-  }
-}
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
   h2 {
     font: bold 1.5rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
     padding-top: 20%;
