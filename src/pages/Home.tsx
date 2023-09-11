@@ -1,6 +1,5 @@
-import { motion } from 'framer-motion';
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 
 function Home() {
@@ -24,7 +23,7 @@ function Home() {
                     </p>
                 </div>
                 <div className='image-right'>
-                    <img src={require('../assets/header-pic.png')} className='home-pic' alt='header-pic' />
+                    {/* <Image src='../assets/header-pic.png' className='home-pic' alt='header-pic' /> */}
                 </div>
             </section>
         </motion.main>

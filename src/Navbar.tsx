@@ -23,7 +23,6 @@ const ToggleMenuButton: React.FC = () => {
                 </a>
                 <button className="navbar-toggler" type="button" onClick={toggleMenu}>
                     <Icon path={mdiMenuDown} size={2} color="" />
-
                 </button>
                 <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`}>
 
